@@ -22,6 +22,7 @@
 		DC38AAF72A0B38E50072BAE1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38AAF62A0B38E50072BAE1 /* ProfileViewController.swift */; };
 		DC38AAFA2A0B41BC0072BAE1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38AAF92A0B41BC0072BAE1 /* Extensions.swift */; };
 		DC586B412A1810E700B138DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC586B402A1810E700B138DE /* GoogleService-Info.plist */; };
+		DC586B432A186C8400B138DE /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC586B422A186C8400B138DE /* DatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		DC38AAF62A0B38E50072BAE1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DC38AAF92A0B41BC0072BAE1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DC586B402A1810E700B138DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC586B422A186C8400B138DE /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		FFFCB3609DBFA99EE69FDE95 /* Pods-Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.release.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 				DC38AAD22A0B331A0072BAE1 /* AppDelegate.swift */,
 				DC38AAD42A0B331A0072BAE1 /* SceneDelegate.swift */,
 				DC38AAF92A0B41BC0072BAE1 /* Extensions.swift */,
+				DC586B422A186C8400B138DE /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC38AAED2A0B38640072BAE1 /* LoginViewController.swift in Sources */,
+				DC586B432A186C8400B138DE /* DatabaseManager.swift in Sources */,
 				DC38AAEF2A0B387C0072BAE1 /* RegisterViewController.swift in Sources */,
 				DC38AAF52A0B38D00072BAE1 /* NewConversationViewController.swift in Sources */,
 				DC38AAD72A0B331A0072BAE1 /* ConversationsViewController.swift in Sources */,
