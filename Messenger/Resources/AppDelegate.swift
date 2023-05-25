@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 import FBSDKCoreKit
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             didFinishLaunchingWithOptions: launchOptions
         )
         
+        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+            if error != nil || user == nil {
+                // Show the app's signed-out state.
+                print("Show the app's signed-out state")
+            } else {
+                // Show the app's signed-in state.
+                print("Show the app's signed-in state")
+                
+            }
+            
+        }
+        
         return true
     }
     
@@ -37,5 +50,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
             annotation: options[UIApplication.OpenURLOptionsKey.annotation]
         )
+        
+        var handled: Bool
+
+        handled = GIDSignIn.sharedInstance.handle(url)
+        if handled {
+          return true
+        }
+        
+        // Handle other custom URL types.
+
+        // If not handled by this app, return false.
+        
+        return false
     }
+    
+    
+    
 }
